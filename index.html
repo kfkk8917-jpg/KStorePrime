@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kstore</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background: #1c1c1c;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+
+    .menu {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .container {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .movie {
+      background: #1b1b1b;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s;
+      text-align: center;
+    }
+
+    .movie:hover {
+      transform: scale(1.05);
+    }
+
+    .movie img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .title {
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Kstore</div>
+  <div class="menu">More movies will be added soon</div>
+</header>
+
+<div class="container">
+
+  <!-- GOAT MOVIE -->
+  <div class="movie" onclick="window.location.href='https://archive.org/details/movie_20260511'">
+    <img src="goat.jpg" alt="GOAT Movie Poster">
+    <div class="title">GOAT</div>
+  </div>
+
+  <!-- SUPER MARIO MOVIE -->
+  <div class="movie" onclick="window.location.href='https://archive.org/details/the.-super.-mario.-galaxy.-movie.-2026.1080p.-web.-dl.-egy-dead.-co-m'">
+    <img src="mario.jpg" alt="Mario Movie Poster">
+    <div class="title">The Super Mario Galaxy Movie</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  © Kstore - All rights reserved
+</div>
+
+</body>
+</html>
